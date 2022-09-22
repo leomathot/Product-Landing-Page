@@ -1,0 +1,325 @@
+:root {
+  --main-color: #F1F0D9;
+  --footer-color: #E8E7D0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-color);
+  color: #740E00;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: Sans-serif, Tahoma, serif;
+}
+
+/* the header is wider than the header-canvas */
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--main-color);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* this includes the logo and the nav-bar */
+#header-canvas {
+  display: flex;
+  max-width: 900px;
+  min-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #740E00;
+}
+
+/* red square */
+.logo-background {
+  background-color: #E83F11;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 5px;
+}
+
+/* red circle with the letter A */
+.logo-img {
+  margin-top: 0px;
+  margin-bottom: 0;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  top: 10px;
+}
+
+/* text "Akira" */
+.logo-text {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 0;
+  position: relative;
+  top: 15px;
+}
+
+ .bold {
+   font-weight: bold;
+ }
+
+/* Features / Houw it works / Order */
+.nav-bar {
+  height: 100px;
+  margin-left: auto;
+  padding-top: 70px;
+}
+
+/* Features / Houw it works / Order */
+.nav-list {
+  list-style: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  margin-right: 10px;
+}
+
+/* each of Features, Houw it works and Order */
+.nav-link {
+  margin-left: 25px;
+}
+
+/* each of Features, Houw it works and Order */
+a {
+  text-decoration: none;
+  color: #740E00;
+}
+
+#features, #order, #how-it-works {
+  display: block;
+}
+
+/* space above the sections when targeted from nav-bar is created to avoid being covered by the header */
+#features:target::before, #order:target::before, #how-it-works:target::before {
+  display: block;
+  height: 120px;
+  width: 100%;
+  content: " ";
+}
+
+/* main includes the features, the video and the pricing */
+main {
+  background-color: var(--main-color);
+  max-width: 900px;
+  margin-top: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+}
+
+/* form, features, video (how it works) and pricing */
+.form-block, section {
+  margin-bottom: 50px;
+}
+
+/* form */
+.form-block{
+  text-align: center;
+}
+
+.form-block h2{
+  margin-bottom: 30px;
+}
+
+/* buttons */
+.btn {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  height: 25px;
+  border: 0;
+  background-color: #E0F100;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 4px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* buttons:hover */
+.btn:hover {
+  background-color: #FFAF24;
+  transition: background-color 0.9s;
+}
+
+/* icons and features */
+.grid {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+/* icons for features */
+.icon {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+}
+
+.icon img {
+  width: 55px;
+  height: 55px;
+}
+
+/* feature headings */
+#features h3 {
+  margin-bottom: 5px;
+}
+
+/* the video part */
+#how-it-works-canvas {
+  display: flex;
+  justify-content: center;
+}
+
+/* the video */
+#video {
+  border: 2px solid #740E00;
+  margin-bottom: 20px;
+}
+
+/* order section has to be displayed as a block. order-canvas is within it and can be displayed as flex */
+#order-canvas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+/* each bordered square */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #740E00;
+  min-width: 200px;
+}
+
+/* the product model */
+.model {
+  background-color: #FFD75B;
+  color: black;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* the pice */
+ .product h2 {
+   margin-bottom: 15px;
+ }
+
+/* the list below the price */
+.product ol {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.product li {
+  text-align: center;
+}
+
+/* footer */
+footer {
+  height: 100px;
+  background-color: var(--footer-color);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 30px;
+}
+
+footer > ul {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  font-weight: 600;
+}
+
+footer ul li {
+  font-size: 0.9rem;
+  padding-left:15px;
+}
+
+footer p {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+}
+
+/* (max-width: 650px) */
+/* products go from row to column */
+@media (max-width: 650px) {
+  #order-canvas {
+    display: block;
+  }
+
+  .product {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 250px;
+  }
+  
+  #features .icon {
+    display: none;
+  }
+}
+
+/* (max-width: 550px) */
+/* nav-bar items go from row to column */
+@media (max-width: 550px) {
+  .nav-bar {
+    padding-top: 15px;
+  }
+
+  .nav-list {
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .nav-list li {
+    margin-top: 8px;
+  }
+
+.nav-link {
+  margin-left: 0px;
+}
+
+  body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #header {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

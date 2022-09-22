@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>freeCodeCamp project - Product Landing Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <div id="header-canvas">
+        <div class="logo-background">
+          <img id="header-img" 
+              class="logo-img" 
+              src="https://cdn-icons-png.flaticon.com/512/3595/3595030.png"
+              alt="Akira logo">
+          <p class="logo-text"><span class="bold">Akira</span></p>
+        </div>
+        <nav id="nav-bar" 
+            class="nav-bar">
+            <ul class="nav-list">
+              <li>
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#how-it-works">How It Works</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#order">Order</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container" id="sections">
+      <div class="form-block">
+        <h2>Akira SuperStorm</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" type="email" name="email" placeholder="Enter your email address" required />
+          <input class="btn" id="submit" type="submit" value="Get Started" />
+        </form>
+      </div>
+      <section id="features">
+        <div class="grid">
+          <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/394/394631.png" alt="fire-icon"></div>
+          <div class="desc">
+            <h3>High Quality</h3>
+            <p>If you are looking for a quality guitar at an affordable price, the SuperStorm is a perfect option. Its knob wood fingerboard, along with its ergonomic shape, will allow you to play comfortably, reducing fatigue. The Canadian maple neck will offer you quality, resistance and elegance. Finally, the baked poplar body wood will give this electric guitar a clean and impeccable sound.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/306/306047.png" alt="shield-icon"></div>
+          <div class="desc"><h3>History</h3>
+            <p>We are a company with more than 30 years of experience in the field and more than 10 years ago we launched this product designed to give thousands of artists an ideal companion on their way to glory.</p></div>
+        </div>
+        <div class="grid">
+          <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/679/679922.png" alt="boox-icon"></div>
+          <div class="desc"><h3>Shipping</h3>
+            <p>We make sure you recieve your guitar as soon as possible. We also provide free returns if you are not satisfied.</p></div>
+        </div>
+      </section>
+      <section id="how-it-works">
+        <div id="how-it-works-canvas">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/x0RV0kgdqJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      </section>
+      <section id="order">
+      <div id="order-canvas">
+          <div class="product">
+            <div class="model">SS Classic</div>
+            <h2>$1200</h2>
+            <ol>
+              <li>Competition Orange</li>
+              <li>Black</li>
+              <li>Vintage Red</li>
+              <li>Georgia Green</li>
+              <li>Burgundy Mist</li>
+            </ol>
+            <button class="btn">Select</button>
+        </div>
+        <div class="product">
+            <div class="model">SS Metal</div>
+            <h2>$1350</h2>
+            <ol>
+              <li>Metallic Black</li>
+              <li>Snow White</li>
+              <li>Satin Jade Pearl</li>
+              <li>Frost Metallic</li>
+              <li>Charcoal Frost Metallic</li>
+            </ol>
+            <button class="btn">Select</button>
+        </div>
+        <div class="product">
+            <div class="model">SS Silver</div>
+            <h2>$1300</h2>
+            <ol>
+              <li>Tobacco Burst</li>
+              <li>Transparent Red Burst</li>
+              <li>Fire Magenta Burst</li>
+              <li>Airline Silver</li>
+              <li>Satin Red</li>
+            </ol>
+            <button class="btn">Select</button>
+        </div>
+      </div>
+      </section>
+    </main>
+    <footer>
+       <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <p>freeCodeCamp project</p>
+    </footer>
+  </body>
+</html>
